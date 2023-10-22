@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif; /* Шрифт, в конце сам определяет что подходит если нет доступных шрифтов */
+    font-size: 19px; /* Размер текста */
+    font-style: normal; /* Стило текста */
+    background: rgba(0, 155, 155, 0.121);
+    color: rgb(0, 22, 27);
+}
+
+a {
+    text-decoration: none; /* Отключает декорации, в данном случае нижнее подчёркиваниеу ссылок */
+    color: rgb(0, 63, 118);
+    transition: all .1s; /* Время за которое происходят анимации */
+}
+
+a:hover { /* hover - состояние объекта, когда на нём курсор */
+    color: rgb(0, 187, 109);
+    text-decoration: underline;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto; /* Автоматически центрует */
+}
+
+.info{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    font-style: italic; /* Стиль текста угловой */
+    font-weight: bold; /* Стиль текста "Смелый" */
+    color: rgba(0, 0, 0, 0.6);
+    margin: 1px;
+}
+
+.info-text h4{
+    margin-bottom: 5px;
+}
+
+.info img{
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+@media (max-width: 740px) {
+    .info {
+        display: block;
+    }
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 20px; /* Закругдение на 20 пкс */
+    margin-bottom: 10px; /* Отступ снизу снаружи */
+    padding-left: 20px; /* Отступ слева внутри */
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+.bg-yellow{
+    background: #fff9dc;
+}
+
+.bg-red{
+    background: #ffe5e5;
+}
+
+.bg-green{
+    background: #e5ffe7;
+}
+
+.bg-blue{
+    background: rgb(188, 216, 255);
+}
+
+.btn {
+    background: black;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit; /* По стандарту у кнопки нет шрифта, а это делает шрифт как во всём файле */
+    cursor: pointer; /* При наведении курсор изменяется */
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.list {
+    padding: 0px 20px;
+}
+
+.list li {
+    color: #121212;
+    margin-bottom: 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 5px;
+}
+
+.table {
+    width: 100%; /* ширина 100% */
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) { /* выбирает 2-ой и 3-ий столбцы */
+    color: #8a8a8a;
+}
+
+.form h3 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group{
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+    color: #121212;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent; /* Делает задний фон прозрачным */
+    border-bottom: 1px solid #8d8d8d;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none; /* Убирает поле появляющееся при вводе */
+    font-family: inherit;
+}
+
+@media (max-width: 740px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group{
+        margin-bottom: 20px;
+        width: 95%;
+    }
+}
